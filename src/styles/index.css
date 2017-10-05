@@ -1,0 +1,335 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 18, index.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, index.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, index.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, index.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, index.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 41, index.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, index.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 65, index.scss */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* line 69, index.scss */
+html {
+  font-size: 20px;
+  font-family: 'Slabo 27px', serif;
+}
+@media (max-width: 350px) {
+  /* line 69, index.scss */
+  html {
+    font-size: 16px;
+  }
+}
+
+/* line 77, index.scss */
+body {
+  background: #a2bec5;
+}
+
+/* line 82, index.scss */
+.container {
+  max-width: 350px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background: #1b3861;
+  box-shadow: 0.25em 0.25em 0.5em #333333;
+}
+@media (max-width: 350px) {
+  /* line 82, index.scss */
+  .container {
+    max-width: 270px;
+  }
+}
+
+/* line 96, index.scss */
+.game-container {
+  width: 92%;
+  margin: 0.8em auto;
+  border: 0.15em solid #ecba1d;
+}
+/* line 100, index.scss */
+.game-container h1 {
+  text-align: center;
+  margin: 0.4em 0.2em 0 0;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #ecba1d;
+  font-family: 'Great Vibes', cursive;
+  background: #1b3861;
+}
+
+/* line 111, index.scss */
+.questions-container {
+  width: 100%;
+  background: white;
+  margin: 1em auto 0;
+}
+
+/* line 117, index.scss */
+.category {
+  height: 1em;
+  color: white;
+  padding: 0.2em 1.2em 1.3em;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+/* line 123, index.scss */
+.category.yellow {
+  background: #e5e112;
+}
+/* line 126, index.scss */
+.category.blue {
+  background: #72aae7;
+}
+/* line 129, index.scss */
+.category.green {
+  background: #56b945;
+}
+/* line 132, index.scss */
+.category.brown {
+  background: #a67a2f;
+}
+/* line 135, index.scss */
+.category.orange {
+  background: #e7942e;
+}
+/* line 138, index.scss */
+.category.pink {
+  background: #dd82ae;
+}
+
+/* line 143, index.scss */
+.question {
+  background: #ddd;
+  padding: 0.7em 2em;
+}
+
+/* line 148, index.scss */
+.options > li {
+  padding: 0.9em 2em;
+  color: #777;
+}
+/* line 151, index.scss */
+.options > li:hover {
+  color: #111;
+  cursor: pointer;
+}
+
+/* line 158, index.scss */
+.modal-container {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background: #1b3861;
+  top: 7.7em;
+  left: 1.8em;
+  position: absolute;
+}
+@media (max-width: 350px) {
+  /* line 158, index.scss */
+  .modal-container {
+    width: 220px;
+    left: 10%;
+  }
+}
+
+/* line 173, index.scss */
+.modal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0.5em 0;
+  width: 95%;
+  height: 100%;
+  background: #1b3861;
+  color: #ecba1d;
+  font-family: 'Great Vibes', cursive;
+  border: 0.15em solid #ecba1d;
+}
+/* line 185, index.scss */
+.modal h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+/* line 194, index.scss */
+.correct .message, .incorrect .message {
+  font-size: 2.5rem;
+}
+
+/* line 199, index.scss */
+.play-again {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* line 205, index.scss */
+.cheese-container {
+  padding: 1em 0 2em;
+}
+
+/* line 209, index.scss */
+.cheese {
+  transform: rotate(1440deg);
+  width: 5.5em;
+  height: 5.5em;
+  background: #b7af17;
+  border-radius: 50%;
+  position: relative;
+  border: 0.25em solid #efe115;
+}
+/* line 217, index.scss */
+.cheese:before {
+  position: absolute;
+  border-radius: 50%;
+  content: "";
+  background: linear-gradient(transparent 48.5%, #efe115 48.5%, #efe115 51.5%, transparent 51.5%), linear-gradient(60deg, transparent 48.5%, #efe115 48.5%, #efe115 51.5%, transparent 51.5%), linear-gradient(120deg, transparent 48.5%, #efe115 48.5%, #efe115 51.5%, transparent 51.5%);
+  width: 5em;
+  height: 5em;
+  top: 0;
+  left: 0;
+}
+/* line 227, index.scss */
+.cheese:after {
+  position: absolute;
+  border-radius: 50%;
+  content: "";
+  width: 0.75em;
+  height: 0.75em;
+  top: 2.125em;
+  left: 2.125em;
+  background: #efe115;
+}
+
+/* line 239, index.scss */
+.piece {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0.1em;
+  left: 1.3em;
+  border-radius: 45%;
+  border-left: 1.2em solid transparent;
+  border-right: 1.2em solid transparent;
+  transform-origin: 1.2em 2.4em;
+}
+/* line 249, index.scss */
+.piece.blue {
+  border-top: 2em solid #72aae7;
+}
+/* line 252, index.scss */
+.piece.yellow {
+  border-top: 2em solid #e5e112;
+  transform: rotate(60deg);
+}
+/* line 256, index.scss */
+.piece.brown {
+  border-top: 2em solid #a67a2f;
+  transform: rotate(120deg);
+}
+/* line 260, index.scss */
+.piece.orange {
+  border-top: 2em solid #e7942e;
+  transform: rotate(180deg);
+}
+/* line 264, index.scss */
+.piece.green {
+  border-top: 2em solid #56b945;
+  transform: rotate(240deg);
+}
+/* line 268, index.scss */
+.piece.pink {
+  border-top: 2em solid #dd82ae;
+  transform: rotate(300deg);
+}
+
+/* line 274, index.scss */
+.spin {
+  animation: spin 3s;
+}
+
+@keyframes spin {
+  /* line 279, index.scss */
+  0% {
+    transform: rotate(0deg);
+  }
+
+  /* line 280, index.scss */
+  75% {
+    transform: rotate(1440deg);
+  }
+
+  /* line 281, index.scss */
+  87.5% {
+    transform: scale(1.2);
+  }
+
+  /* line 282, index.scss */
+  100% {
+    transform: scale(1);
+  }
+}
